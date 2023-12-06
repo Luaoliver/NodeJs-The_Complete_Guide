@@ -1,47 +1,24 @@
 const http = require('http');
-const fs = require('fs');
 
-const server = http.createServer((req, res) => {
-    const url = req.url
-    const method = req.method
+// 04
+// Aqui eu posso importar as rotas que criamos. Como não se trata mais de um
+// módulo global, é necessário adicionar o caminho correto. Você também pode
+// omitir a extensão do arquivo
+const routes = require('./routes')
+// O './' indica que o arquivo está localizado na mesma pasta onde está sendo
+// chamado.
 
-    if(url === '/') {
-        res.setHeader('Content-type', 'text/html')
-        res.write('<html>')
-        res.write('<head><title>Enter Message</title><head>')
-        res.write('<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></form></body>')
-        res.write('</html>')
-        return res.end()
-    }
-
-    if(url === '/message' && method === 'POST') {
-        const body = []
-        req.on('data', (chunk) => {
-            console.log(chunk)
-            body.push(chunk)
-        })
-
-        return req.on('end', () => {
-            const parseBody = Buffer.concat(body).toString()
-            console.log(parseBody)
-
-            const message = parseBody.split('=')[1]
-
-            fs.writeFile('message.txt', message, err => {
-                res.statusCode = 302
-                res.setHeader('Location', '/')
-
-                return res.end()
-            })
-        })
-    }
-
-    res.setHeader('Content-type', 'text/html')
-    res.write('<html>')
-    res.write('<head><title>My first Page</title><head>')
-    res.write('<body><h1>Hello from my Node.js Server!</h1></body>')
-    res.write('</html>')
-    res.end()
-});
+const server = http.createServer(routes);
 
 server.listen(3000);
+
+// 05
+// Desta maneira dividimos nosso código em dois arquivos, sendo um deles muito
+// enxuto, rodando apenas o server
+
+// 06
+// Uma coisa importante sobre o sistema de módulos do nodeJs, o conteúdo do
+// arquivo é armazenado em cache e não podemos editá-lo externamente,
+// portanto, se de alguma forma definirmos rotas como um objeto e tentarmos
+// adicionar um novo no arquivo 'routes.js', isso não manipularia o arquivo
+// original. Essa modificação ficará registrada mas não será acessível de fora.
