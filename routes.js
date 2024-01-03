@@ -1,15 +1,6 @@
 const fs = require('fs')
 
-
-// 01
-// Precisamos conectar o app.js com o routes.js. Para isso, criaremos uma nova
-// função, que pode ser assim:
-// function requestHandler(req, res) {}
-// Ou assim:
 const requestHandler = (req, res) => {
-    // 02
-    // Aqui adicionamos todo o código que anteriormente foi feito no app.js
-
     const url = req.url
     const method = req.method
 
@@ -52,19 +43,4 @@ const requestHandler = (req, res) => {
     res.end()
 }
 
-// 03
-// É necessário exportar o arquivo, para isso há duas maneiras. A primeira
-// delas é adicionando o module.exports ao final do arquivo, assim:
 module.exports = requestHandler
-// Utilizando essa maneira é possível trabalhar com essa função, importando-a
-// a partir dessas rotas. Esse export será buscado pelo nodejs, verificando se
-// algo foi registrado para esse arquivo.
-
-// Também podemos utiliza-lo das seguintes maneiras:
-// module.exports = {
-//     handler: requestHandler,
-//     someText: 'Some hard coded text'
-// }
-// ou também:
-// module.exports.handler = requestHandler
-// module.exports.someText = 'Some hard coded text'
