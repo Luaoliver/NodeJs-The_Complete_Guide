@@ -8,3 +8,7 @@
 
 // No passo 2, criou-se as urls informadas com a utilização de um if. 
 // Em cada página foi adicionado um texto para conferência.
+
+// No terceiro passo, adicionei um formulário para que fosse possível salvar usuários.
+
+// Para finalizar com o passo 4, bastou adicionar um console.log
