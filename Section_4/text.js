@@ -89,3 +89,34 @@
 
 // Pacotes instalados nesta aula:
 //      npm install nodemon --save-dev
+// --------------------
+
+// 44. Global Features vc Core Modules vc Thitd-Party Modules
+// As últimas aulas continham conceitos importantes sobre recursos
+// disponíveis do Node e como desbloqueá-los.
+
+// Você pode basicamente diferenciar entre:
+
+// Recursos globais: palavras-chaves como 'const' ou 'function', mas também
+// alguns objetos globais como 'process'
+
+// Módulos principais: exemplos seriam o modulo do sistema de arquivos 'fs', 
+// o módulo de caminho 'path' ou o módulo
+// Http 'http'
+
+// Módulos de terceiros: instalados via npm install, você pode adicionar
+// qualquer tipo de recurso ao seu aplicativo.
+
+// Os recurso globais estão sempre disponíveis, você não precisa importá-los
+// para os arquivos onde deseja utilizar.
+
+// Os modulos principais do Node não precisam ser instalados via npm, mas é
+// necessário importá-los. Exemplo:
+//      const fs = requer('fs');
+
+// Os módulos de terceiros precisam ser instalados via npm e importados.
+// Exemplo:
+// No terminal/prompt de comando
+//      npm install --save express-session
+// No arquivo de código
+//      const sessions = require('express-session');  
