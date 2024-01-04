@@ -37,3 +37,55 @@
 // você deverá utilizar 'npm run'. Como por exemplo, caso crie um script:
 //      "start-server": "node app.js"
 // Você poderá utilizá-lo com 'npm run start-server'
+
+// --------------------
+
+// 43. INSTALLING #RD PARTY PACKAGES
+// Com um projeto de node gerenciado, também há a possibilidade de fazer outras
+// coisas: como instalar pacotes de terceiros.
+// Quando você cria um projeto local, você tem seu código e o Core Node
+// Packages, a partir disso é possível adicionar dependências de terceiros que
+// podem te ajudar a analisar solicitações recebidas, validar entradas, entre
+// outras coisas.
+// Alguns pacotes que usaremos nós próximos módulos são o express e body-parser.
+// Todos esses pacotes ficam disponíveis no npm repository. Um repositório de
+// pacotes na nuvem onde os pacotes ficam ativos e você pode instalá-los e
+// gerenciá-los via npm.
+
+// Agora, instalaremos um pacote que nos auxilie ao rodar nossa aplicação. Da
+// maneira que o fazemos atualmente (com node app.js), sempre que houver uma
+// modificação, o app precisar ser reiniciado. Com esse pacote, esse trabalho
+// será realizado automaticamente, bastando apenas salvar a modificação feita.
+// Esse pacote se chama 'nodemon'. Para instalá-lo basta utilizar:
+//      npm install nodemon
+// È possível ler mais sobre a maioria dos pacotes disponíveis acessando o site
+// npmjs.com, como https://www.npmjs.com/package/nodemon.
+
+// Outra possibilidade é definir como um pacote será instalado. Estes pacotes
+// podem ser divididos em Pacotes de Desenvolvimento e Pacote de Produção.
+// O Pacote de Desenvolvimento é composto pelas extensões que o auxiliam no
+// desenvolvimento do app. Enquanto o Pacote de Produção o
+// o auxilia a rodar o app enquanto desenvolve.
+// Isso não faz grande diferença, é uma informação que pode ser omitida, mas
+// pode te ajudar a entender qual pacote será usado para qual motivo.
+// Para Pacote de Produção, basta adicioná-lo com:
+//      npm install nodemon --save
+// Para pacotes de Desenvolvimento, basta:
+//      npm install nodemon --save-dev
+// Uma terceira opção seria:
+//      npm install nodemon -g
+// Que não instala no projeto, mas globalmente em sua máquina para ser utilizado
+// em qualquer lugar.
+
+// Após realizar esses comandos, haverá um novo aquivo, o package-lock.json e
+// também uma nova seção, a 'devDepenencies'. Veja:
+//      "devDependencies": {
+//          "nodemon": "^3.0.2"
+//      }
+// O simbolo ^ define como o pacote deverá ser atualizado. Se você executar o
+// npm install sem definir um pacote, este comando passará por todos os pacotes
+// escolhendo automaticamente sua versão, podendo ser uma posterior, se disponível.
+//
+
+// Pacotes instalados nesta aula:
+//      npm install nodemon --save-dev
