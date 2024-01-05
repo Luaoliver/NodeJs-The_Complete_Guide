@@ -152,3 +152,21 @@
 
 // O sinalizador -g garante que o pacote seja adicionado como um pacote global
 // que pode ser utilizado em qualquer lugar da sua máquina.
+
+// --------------------
+
+// 47. Understanding different Error Types
+
+// Nesta aula vamos focar em corrigir erros. Precisamos entender como encontrar
+// e corrigir erros em nosso código. Para isso, primeiro precisamos entender
+// que há difernetes tipos de erros. Sendo eles:
+
+// Syntax Errors: é um erro de digitação no código, é automaticamente
+// lançado quando você tenta executar o projeto.
+
+// Runtime Errors: são erros onde você tenta executar um código que quebra
+// é executado.
+
+// Logical Errors: são os mais dificéis, pois ele nunca mostra uma mensagem
+// de erro, o aplicativo apenas não funciona da maneira que deveria e pode ser
+// difícil encontrá-los.
