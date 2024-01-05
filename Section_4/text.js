@@ -135,3 +135,20 @@
 // Por outo lado, ao contrário de "node app.js", você não pode executar
 // "nodemon app.js" no terminal, pois é uma dependência que foi instalada
 // apenas no projeto e não globalmente.
+
+// --------------------
+
+// 46. Global & Local npm Packages
+
+// Nodemons foi adicionado como uma dependência local. As dependências locais
+// possuem a vantagem de compartilhar projetos sem a pasta node_modules e
+// apenas executar npm install para que ela seja criada. O que permite que
+// apenas o código fonte seja compartilhado.
+
+// O nodemons não funciona no terminal pois utilizamos apenas pacotes locais.
+// Seria possível instalá-lo globalmente, mesmo que não seja necessário, mas
+// bastaria executar:
+//      npm install -g nodemon
+
+// O sinalizador -g garante que o pacote seja adicionado como um pacote global
+// que pode ser utilizado em qualquer lugar da sua máquina.
