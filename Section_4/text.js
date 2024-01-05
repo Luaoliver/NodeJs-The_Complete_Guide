@@ -89,6 +89,7 @@
 
 // Pacotes instalados nesta aula:
 //      npm install nodemon --save-dev
+
 // --------------------
 
 // 44. Global Features vc Core Modules vc Thitd-Party Modules
@@ -120,3 +121,17 @@
 //      npm install --save express-session
 // No arquivo de código
 //      const sessions = require('express-session');  
+
+// --------------------
+
+// 45. Using Nodemon for Autorestarts
+
+// Para utilizar o nodemon, fazendo com que o aplicativo atualize automaticamente
+// basta modificar o comando start para utilizar nodemons, ao invés de node.
+// Como era:
+//      "start": "node app.js"
+// Como deve ficar:
+//      "start": "nodemon app.js"
+// Por outo lado, ao contrário de "node app.js", você não pode executar
+// "nodemon app.js" no terminal, pois é uma dependência que foi instalada
+// apenas no projeto e não globalmente.
