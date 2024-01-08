@@ -170,3 +170,10 @@
 // Logical Errors: são os mais dificéis, pois ele nunca mostra uma mensagem
 // de erro, o aplicativo apenas não funciona da maneira que deveria e pode ser
 // difícil encontrá-los.
+
+// --------------------
+
+// 48. Finding & Fixing Syntax Errors
+
+// Os syntax errors são fáceis de corrigir, quando eles aparecem, rapidamente
+// obtemos ajuda da IDE para correção
