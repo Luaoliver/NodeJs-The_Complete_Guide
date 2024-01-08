@@ -177,3 +177,18 @@
 
 // Os syntax errors são fáceis de corrigir, quando eles aparecem, rapidamente
 // obtemos ajuda da IDE para correção
+
+// --------------------
+
+// 49. Dealing with Runtime Errors
+
+// Esta categoria é sobre erros de tempo de execução. As mensagens de erros são
+// muito úteis, é importante que você as leia e interprete. Geralmente, o topo
+// da mensagem de erro costuma ser mais significativo e esclarecerdor.
+
+// Estes erros costumam apontar para as rotas defeituosas e indicar onde está
+// o erro. Porém, deve-se procurar no código o lugar exato, pois a linha não é
+// informada.
+
+// Estes erros são chamados assim pois eles não aparecem até que você execute
+// o aplicativo.
