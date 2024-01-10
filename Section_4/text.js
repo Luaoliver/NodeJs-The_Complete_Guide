@@ -218,3 +218,11 @@
 
 // Também é possível visualizar a pilha de chamados, ela mostra por onde o
 // processo passou.
+
+// --------------------
+
+// 51. Using the Debugger
+
+// Você pode utilizar o debugger para passar seu código passo a passo, o node
+// registra linha após linha, mas você também deve ter atenção com os break
+// points nos lugares corretos em que deseja analisar
