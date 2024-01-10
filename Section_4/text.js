@@ -226,3 +226,27 @@
 // Você pode utilizar o debugger para passar seu código passo a passo, o node
 // registra linha após linha, mas você também deve ter atenção com os break
 // points nos lugares corretos em que deseja analisar
+
+// --------------------
+
+// 52. Restarting the debugger automatically after editing our App
+
+// Uma coisa importante de se ter em mente é que você pode imprimir os valores
+// de variáveis no terminal, o que for digitado lá não afeta o seu código.
+
+// Quando se utiliza o debugger e salva um arquivo, ele não será reiniciado
+// mas, utilizando o nodemon, é possível fazer com que isso aconteça.
+// Para adiciona, vá em Run -> Add Configuration... -> NodeJs, isso criará um
+// arquivo launch.json, um arquivo de inicialização. Nesse arquivo é possível
+// configurar o debugger do projeto e como ele se comporta.
+// Você pode utilizar configuração de exemplo ou criar uma.
+// Para garantir que o nodemon seja utilizado, você deve definir o runtimeExecutable
+// no arquivo.
+// Nesse arquivo você também pode definir que ele sempre será iniciado com o
+// app.js.
+// Também é possível alterar o console no qual as coisas são registradas, e
+// definir que apareçam no terminal integrado.
+
+// Porém, ao adicionar o nodemon, o launch.json irá procurá-lo globalmente,
+// desta forma, você deve instalá-lo utilizando:
+//      sudo npm install nodemon -g
