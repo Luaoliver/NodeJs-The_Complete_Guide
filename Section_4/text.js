@@ -192,3 +192,29 @@
 
 // Estes erros são chamados assim pois eles não aparecem até que você execute
 // o aplicativo.
+
+// --------------------
+
+// 50. Logical Errors
+
+// Este é geralmente o erro mais difícil de corrigir pois ele não causa uma
+// mensagem de erro, seu aplicativo apenas se comportará da maneira errada.
+// Para corrigi-los, você pode utilizar a ajuda do debugger. Para acessar,
+// você deve ir em Run -> Start Debugging, após isso, você deve escolher um
+// ambiente, neste caso usaremos o nodeJs. Iniciando, você verá uma barra
+// vermelha/laranja no inferior da tela, o que significa que você está em
+// modo debugger. Você também pode verificar o debug console, que mostrará
+// que você está conectado.
+
+// Isso te permite analisar o seu código enquanto ele está funcionando, mas
+// para isso, você precisa definir alguns break points.
+// Quando a execução for pausada, você pode verificar os valores do seu
+// código passando o mouse em cima, ou verificar em Run&Debug. lá você
+// encontra as principais variáveis do seu código.
+
+// Você não apenas poderá ver variáveis locais, como também variáveis
+// bloqueadas. Também é possível selecionar uma variável em particular para
+// monitorar enquanto o código é executado.
+
+// Também é possível visualizar a pilha de chamados, ela mostra por onde o
+// processo passou.
