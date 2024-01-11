@@ -264,3 +264,32 @@
 
 // Um clique duplo no valor que você quer editar é eficaz para modificá-lo,
 // dessa maneira é possível manipular os valores através do debugger.
+
+// --------------------
+
+// 55. Wrap Up
+
+// Neste modulo vimos como podemos facilitar o desenvolvimento ou a criação
+// de um aplicativo node.js. Com isso, conhecemos:
+
+//      npm - gerenciador de pacotes do node que nos permite gerenciar nosso
+// projeto e, principalmente, suas dependências. Seus scripts são definidos
+// em package.json.
+
+//      3rd Party Packages - os projetos costumam utilizar mais do que apenas
+// os pacotes principais do node e por isso, existe a possibilidade de 
+// utilizar pacotes de terceiros. Eles são instalados via npm. Você também pode
+// diferenciar entre dependencias de produção (--save), dependências de
+// desenvolvimento (--save-dev) e dependências globais (-g).
+// Você também pode utilizá-las sem definir, mas isso ajuda a organizar o seu
+// projeto e definir o que tem sido usado para quê.
+
+//      Types of errors - Syntax, runtime e logical errors podem quebrar seu
+// aplicativo. Syntax e runtime errors lançam uma mensagem de erro e indica
+// a linha que se encontra. Enquanto logical errors só pode ser resolvido
+// testando a lógica do seu código através do debugger.
+
+//      Debugging - É um processo muito útil pois você cpode testar o seu
+// código passo a passo. É possível analisar variáveis e valores enquanto
+// executa o código. Também há a possibilidade de manipular valores e definir
+// breakpoints.
