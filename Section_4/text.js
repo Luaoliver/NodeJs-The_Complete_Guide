@@ -1,4 +1,5 @@
 // 41. MODULE INTRODUCTION
+
 // Nesta seção será mostrado como acelerar e melhorar o desenvolvimento
 // utilizando NodeJs e como depurar nossos aplicativos utlizando várias
 // ferramentas a fim de entender melhor o que acontece por debaixo dos panos.
@@ -6,6 +7,7 @@
 // --------------------
 
 // 42. UNDERSTANDING NPM SCRIPTS
+
 // Durante todo o desenvolvimento, para iniciar nosso aplicativo utizamos
 // "node app.js", que é uma maneira válida de o fazer. Mas também há a
 // possibilidade de definiri alguns scripts para facilitar e organizar isso.
@@ -41,6 +43,7 @@
 // --------------------
 
 // 43. INSTALLING #RD PARTY PACKAGES
+
 // Com um projeto de node gerenciado, também há a possibilidade de fazer outras
 // coisas: como instalar pacotes de terceiros.
 // Quando você cria um projeto local, você tem seu código e o Core Node
@@ -93,6 +96,7 @@
 // --------------------
 
 // 44. Global Features vc Core Modules vc Thitd-Party Modules
+
 // As últimas aulas continham conceitos importantes sobre recursos
 // disponíveis do Node e como desbloqueá-los.
 
