@@ -257,3 +257,10 @@
 
 // Artigo útil para se aprofundar nos estudos do debugger:
 //  https://code.visualstudio.com/docs/nodejs/nodejs-debugging
+
+// --------------------
+
+// 54. Changing Variables in the Debug Console
+
+// Um clique duplo no valor que você quer editar é eficaz para modificá-lo,
+// dessa maneira é possível manipular os valores através do debugger.
