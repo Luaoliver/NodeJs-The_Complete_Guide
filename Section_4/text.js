@@ -250,3 +250,10 @@
 // Porém, ao adicionar o nodemon, o launch.json irá procurá-lo globalmente,
 // desta forma, você deve instalá-lo utilizando:
 //      sudo npm install nodemon -g
+
+// --------------------
+
+// 53. Debugging Node.js in VSCode
+
+// Artigo útil para se aprofundar nos estudos do debugger:
+//  https://code.visualstudio.com/docs/nodejs/nodejs-debugging
