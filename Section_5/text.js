@@ -24,3 +24,13 @@
 // criar seu aplicativo e trabalhar com suas funções de forma altamente
 // extensível e, por este motivo, há diversos pacotes criado por terceiros
 // para serem utilizados no Express sem a necessidade de muita configuração.
+
+// --------------------
+
+// 59. Installing Express.js
+
+// Para instalar o Express.js bata executar:
+//      npm install --save express
+// *Indica que será uma dependência de produção.
+
+// Uma vez instalado, você pode ver uma nova dependência no package.json.
