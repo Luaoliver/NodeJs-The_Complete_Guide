@@ -34,3 +34,17 @@
 // *Indica que será uma dependência de produção.
 
 // Uma vez instalado, você pode ver uma nova dependência no package.json.
+
+// --------------------
+
+// 60. Adding Middleware
+
+// O Express atua através de middleware. Ter um middleware significa que uma
+// solicitação recebida é canalizada automaticamente através de várias funções
+// pelo express. Então, ao invés de ter apenas um manipulador, você pode
+// conectar várias funções pelas quais a solicitação passará até você enviar
+// uma resosta.
+// Isso permite que você divida seu código em vários blocos ao invés de ter
+// tudo agrupado.
+
+// Este é um conceito que será utilizado nesta aula.
