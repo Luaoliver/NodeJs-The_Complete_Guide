@@ -19,6 +19,7 @@ app.use((req, res, next) => {
 
 app.use((req, res, next) => {
     console.log('In another middleware')
+    res.send('')
 })
 // Quando você adiciona um segundo, é necessário informar que deve pular para
 // o próximo quando o primeiro for executado, utilizando next.

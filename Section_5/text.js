@@ -48,3 +48,16 @@
 // tudo agrupado.
 
 // Este é um conceito que será utilizado nesta aula.
+
+// --------------------
+
+// 61. How Middleware Works
+
+// Para que o middleware funcione, você precisa enviar uma resposta como (next)
+// se não ele simplesmente morrerá e não passará para o próximo.
+
+// Ao invés de utilizar o res.write, que vimos anteriormente. Utilizaremos
+// res.send para o envio de resposta. Ele nos permite anexar um corpo do tipo
+// any.
+// Quando você adiciona res.send() no middleware, não há a necessidade de
+// utilizar o next, pois o res.send() já é visto como uma resposta.
