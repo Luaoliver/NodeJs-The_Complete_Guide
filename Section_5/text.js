@@ -61,3 +61,26 @@
 // any.
 // Quando você adiciona res.send() no middleware, não há a necessidade de
 // utilizar o next, pois o res.send() já é visto como uma resposta.
+
+// --------------------
+
+// 62. Express.js - Looking Behind the Scenes
+
+// Aqui está o código aberto do Express: https://github.com/expressjs/express
+// Neste repositório, você encontrará um arquivo response.js na pasta lib,
+// neste arquivo há muito código. É uma maneira de entender o que as coisas
+// fazem por baixo dos panos
+// O prórpio express é responsável por fazer a verificação do tipo caso você
+// não o atribua, desta maneira ele define uma validação padrão que dirá qual
+// tipo de dado recebido.
+
+// Não há necessidade de estudar todo o código do Express, ele foi feito para
+// facilitar o processo de desenvolvimento, mas visitá-lo algumas vezes pode
+// te ajudar.
+
+// Outra coisa interessante é que ele nos permite diminuir o código que define
+// nosso server. Substituindo isso:
+//      const server = http.createServer(app);
+//      server.listen(3000);
+// Por isso:
+//      app.listen(3000)
