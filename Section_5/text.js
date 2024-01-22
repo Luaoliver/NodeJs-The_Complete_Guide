@@ -84,3 +84,18 @@
 //      server.listen(3000);
 // Por isso:
 //      app.listen(3000)
+
+// --------------------
+
+// 63. Handling Different Routes
+
+// Para deixar nosso aplicativo mais interessante, gostaríamos de poder lidar
+// com rotas. Para isso, inciaremos removendo nosso middleware fictício.
+
+// Há várias maneiras diferentes de utilizar a funçaõ 'use'.
+// Uma dessas maneira é: você tem um primeiro argumento opcional, que é um
+// caminho; Temos um retorno de chamada, basicamente é a função que deve ser
+// executada; E por último, podemos ter mais um retorno de chamada, que poderá
+// conter vários retornos.
+
+// Toda rota deve começar com uma barra ('/')
