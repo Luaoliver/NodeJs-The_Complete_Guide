@@ -17,3 +17,6 @@
 // Uma função middleware tem acesso ao objeto de solicitação (req), o objeto
 // de resposta (res) e a próxima função no ciclo de solicitação-resposta.
 // A próxima função é comumente denotada por uma variável chamada next.
+
+// 3. Para a instrução 3, bastou remover a utilização do next e adicionar 
+// uma resposta para cada middleware com o res.send()
