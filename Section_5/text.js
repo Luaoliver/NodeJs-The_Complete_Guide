@@ -99,3 +99,37 @@
 // conter vários retornos.
 
 // Toda rota deve começar com uma barra ('/')
+
+// --------------------
+
+// 64. Parsing Incoming Requests
+
+// Nesta aula vamos entender como podemos trabalhar com solicitações recebidas
+// e como podemos extrair dados.
+
+// Se você não utiliza o terceiro argumento do middleware, você pode omiti-lo.
+
+// A função redirect é útil pois você não precisa definir manualmente o status
+// e cabeçalho.
+
+// A solicitação nos fornece req.body por padrão, porém o corpo da requisição
+// não é analisado.
+// Para que a solicitação seja analisada, adicionaremos um analisador, sendo
+// ele um novo middleware juntamente com um novo pacote de terceitos, que
+// pode ser instalado com:
+//      npm install --save body-parser
+// Anteriormente o body-parser já foi incluído por padrão no express.Js, porém
+// acabou sendo removido e adicionado novamente. A maneira recomendada de
+// utilizar é instalando o pacote de terceiros, então o faça. Isso porque caso
+// seja removido do Express.js novamente, o código continuará a funcionar.
+// Para utilizá-lo basta importar com:
+//      const bodyParser = require('body-parser')
+// E então:
+//      app.use(bodyParser.urlencoded());
+// Essa é uma função que você precisa executar e pode passar opções para
+// configurá-la, mas não há a necessidade de fazer isso neste momento pois
+// basicamente estamos registrando um middleware. Então no final, essa função
+// apenas produz uma nova função de middleware.
+
+// Isso não analisa todos os corpos possíveis, mas apenas corpos como o que
+// estamos recebendo, aqueles enviados por um formulário.
