@@ -133,3 +133,21 @@
 
 // Isso não analisa todos os corpos possíveis, mas apenas corpos como o que
 // estamos recebendo, aqueles enviados por um formulário.
+
+// --------------------
+
+// 65. Limiting Moddleware Execution to POST Requests
+
+// Podemos analisar o corpo das situações com o bodyParser.
+
+// Ao invés de utilizar o app.use podemos também utilizar o app.get, esse
+// método é bastante parecido com o app.use, sua sintaxe é similar, porém ele
+// só é utilizado para solicitações get.
+// App.get nos permite filtrar solicitações de recebimento.
+// App.post pode filtrar solicitações de entrada.
+
+// Essas são maneiras de utilizar funções middleware diferente do uso que
+// funcionará com todos os métodos http.
+
+// além deles, também temos os já conhecidos delete, patch e put. Mas estes não
+// podem ser utilizados em um documento html padrão.
