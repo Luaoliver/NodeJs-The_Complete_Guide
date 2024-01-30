@@ -151,3 +151,52 @@
 
 // além deles, também temos os já conhecidos delete, patch e put. Mas estes não
 // podem ser utilizados em um documento html padrão.
+
+// --------------------
+
+// 66. Using Express Router
+
+// Este módulo é de extrema importância pois todos os outros módulos do curso
+// se basearão neste.
+
+// Em um aplicativo pequeno como o nosso, a divisão de arquivos não se torna
+// tão relevante, mas a medida que ele vai crescendo se torna necessário
+// pensar maneiras de dividir seu conteúdo em arquivos menores.
+
+// Pensando nisso, o express.js oferece uma maneira muito boa de terceirizar o
+// roteamento para outrso arquivos.
+// Para isso, devemos alterar um pouco a estrutura de pastas.
+// Primeiramente adicionamos uma pasta routes e dentro dela será armazenado
+// todas as rotas que o aplicativo possui.
+// A primeira pasta a se criar é admin.js, porque esse deve ser o caminho que
+// lida com a criação de produtos no app que estamos criando.
+// Outro arquivo adicionado será o shop.js, que basicamente conterá tudo aquilo
+// que o usuário pode visualizar.
+
+// A rota de adicionar produto e produto devem entrar no arquivo route.js pois
+// são rotas administrador. Enquanto a rota geral deve entrar em shop.js para
+// que os usuários possam visualizar na página inicial.
+
+// Um recurso oferecido pelo Express.js para auxiliar nisso é o Router, ele
+// se comporta como um mini aplicativo expresso vinculado a outro aplicativo
+// expresso ou conectável .
+
+// O Router sozinho não faz muita coisa, mas ele pode ser utilizado para
+// registrar as coisas.
+
+// Agora, ao invés de utilizar app.get, poderemos utilizar router.get.
+
+// Para utilizar as rotas criadas em outro arquivo basta importá-las, como
+// por exemplo:
+//      const adminRoutes = require('./routes/admin')
+
+// A ordem com que você chama as rotas no arquivo principal importa, preste
+// atenção nisso.
+
+// Após adicionar as rotas em seus devidos arquivos e atribuir seus respectivas
+// metodos http, ao importar no arquivo principal, não é relevante a ordem que
+// você os adiciona, pois cada método fará uma correspondência exatam àquilo
+// que ele deve fazer.
+
+// Lembre-se, as rotas só funcionam se forem configuradas, rotas não configuradas
+// não podem ser acessadas.
