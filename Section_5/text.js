@@ -200,3 +200,17 @@
 
 // Lembre-se, as rotas só funcionam se forem configuradas, rotas não configuradas
 // não podem ser acessadas.
+
+// --------------------
+
+// 67. Adding a 404 Error Page
+
+// Quando acessamos uma url não listada em nosso aplicativo, nos é retornado
+// um erro genérico, nosso objetivo aqui é criar uma página de erro que retrne
+// um 404 de maneira mais agradável.
+
+
+// Para isso, a maneira fácil é adicionar um catch ao final do aplicativo.
+
+// Uma informação interessante é a possibilidade de encadear todas as
+// solicitações uma atrás da outra, sendo o "send" o ultimo.
