@@ -214,3 +214,23 @@
 
 // Uma informação interessante é a possibilidade de encadear todas as
 // solicitações uma atrás da outra, sendo o "send" o ultimo.
+
+// --------------------
+
+// 68. Filtering Paths
+
+// Algumas rotas podem ter o caminho inicial em comum, como também a mesma rota
+// pode se repetir se o método utilizado for diferente.
+// Porem, há uma informação importante, se houver rotas que iniciem com o
+// mesmo segmento, nós podemos filtrá-las através deste segmento.
+// Como por exemplo, imagine as seguintes rotas existentes no admin.js:
+//      '/admin/add-product'
+//      '/admin/product'
+// Podemos chamá-las no arquivo app.js como:
+//       app.use('/admin', adminRoutes)
+// Fazendo isso, exclui-se a necessidade de que as duas rotas tenham o segnmento
+// podendo ser refatoradas para:
+//      '/add-product'
+//      '/product'
+// Desta maneira, as rotas ainda serão acessadas pelo segmento admin, mas
+// não há a necessidade de repetir essa informação.
