@@ -234,3 +234,24 @@
 //      '/product'
 // Desta maneira, as rotas ainda serão acessadas pelo segmento admin, mas
 // não há a necessidade de repetir essa informação.
+
+// --------------------
+
+// 69. Creating HTML Pages
+
+// Até o momento utilizamos sempre um html fictício, para contornar isso
+// criaremos arquivos html reais.
+// Começamos criando uma nova pasta chamada views, poderiamos nomeá-la com
+// qualquer nome, mas escolhemos este pois lentamente migraremos nosso
+// código para o modelo MVC.
+// Esta pasta será utlizada para gerenciar as visualizações, tudo aquilo que
+// o usuário vê.
+
+// Futuramente usaremos conceitos de mecanismos de modelagem para adicionar
+// conteúdos dinamicamente aos arquivos html.
+
+// Para iniciar um aquivo html, você pode digitar "html" e automaticamente
+// será indicado "html:5" como opção, basta selecionar que seu arquivo será 
+// automaticamente com o esqueleto básico.
+
+// <ul> e <li> são responsáveis por adicionar uma lista não ordenada de itens.
