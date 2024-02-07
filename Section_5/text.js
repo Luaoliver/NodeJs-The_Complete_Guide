@@ -255,3 +255,29 @@
 // automaticamente com o esqueleto básico.
 
 // <ul> e <li> são responsáveis por adicionar uma lista não ordenada de itens.
+
+// --------------------
+
+// 70. Serving HTML Pages
+
+// O objetivo desta aula é servir os arquivos html pois na última aula apenas
+// adicionamos os arquivos html, sem modificar os arquivos js.
+
+// Vamos começar por shop.js, ao invés de enviar um html falso, vamos enviar um
+// arquivo com sendFile.
+
+// Para construir um caminho para um diretório, podemos utilizar uma feature
+// fornecida pelo nodejs: path.
+// Para utilizá-lo, você pode fazer: path.join()
+// Join produz um caminho no final. Ele basicamente constroi um caminho
+// concatenando segmentos e o retorna.
+
+// O argumento passado para join será "__dirname", essa é uma variável global
+// que simplesmente mantém o caminho absoluto em nosso sistema operacional para
+// a nossa pasta do projeto. Sendo assim, após ele basta adicionar uma vírgula
+// e em seguida adicionar seus arquivos.
+
+// A variável __dirname apontará diretamente para a pasta em que ela está
+// presente. E para resolver esse problema, podemos adicionar o caminho '../'
+// isso fará com que ele retorn uma pasta atrás e busque pela pasta citada e
+// em seguida pelo arquivo. Concatenando tudo que foi adicionado.
