@@ -294,3 +294,17 @@
 // seguida, que é a mesma função que está sendo utilizada nos arquivos de rota.
 // Dentro do sendFile, chame path.join e indique o caminho do arquivo que
 // deseja utilizar.
+
+// 72. A Hint!
+
+// Na próxima aula, escreveremos este código:
+
+// module.exports = path.dirname(process.mainModule.filename);
+// (Eu explico por que escrevemos esse código na próxima aula, quando o 
+// escrevermos!)
+
+// O importante é que você receba um aviso de descontinuação para esse código
+// - nesse caso, você pode simplesmente mudar para este código:
+
+// module.exports = path.dirname(require.main.filename);
+// Bem direto :)
