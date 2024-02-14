@@ -308,3 +308,31 @@
 
 // module.exports = path.dirname(require.main.filename);
 // Bem direto :)
+
+// 73. Using a Helper Function For Navigation
+
+// Antes de trabalharmos com estilo, é interessante entender como navegamos até
+// a pasta raiz, usando o exemplo de:
+//      res.sendFile(path.join(__dirname, '../', 'views', 'shop.html'))
+
+// Para começar, você pode utlizar '..' ao invés de '../', isso seria
+// preferível pois funcionaria tanto no mac quanto no Windows, pois desta 
+// maneira não assumimos o separador que estamos utilizando na construção
+// do caminho.
+
+// Porém, além disso, há uma maneira muito melhor para especificar esses
+// caminhos. Podemos obter o diretório através de uma função auxiliar, para
+// isso vamos adicioná-la em util/path. Não importa que seu nome conflite
+// com o universal pois o importaremos de maneira diferente.
+// Dentro desse arquivo utilizaremos uma função path.dirname, que retorna o
+// nome do diretório de um caminho. Ou seja, basta descobrir qual arquivo
+// queremos saber o nome de diretório.
+
+// Nisso, podemos utilizar uma variável de processo global, que está disponível
+// em todos os arquivos e não precisa ser importada. Com isso você terá uma
+// propriedade de módulo principal. Isso se refere ao módulo inicial do seu
+// projeto, a raiz dele.
+
+// Após criado o arquivo, vamos importá-lo em todas as rotas. Você ainda pode
+// utilizar a abordagem antiga, mas essa também é uma maneira que funciona,
+// além de ser mais limpa e que deve funcionar em todos os sistemas operacionais.
