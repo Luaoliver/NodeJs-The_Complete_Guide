@@ -281,3 +281,16 @@
 // presente. E para resolver esse problema, podemos adicionar o caminho '../'
 // isso fará com que ele retorn uma pasta atrás e busque pela pasta citada e
 // em seguida pelo arquivo. Concatenando tudo que foi adicionado.
+
+// --------------------
+
+// 71. Returning a 404 page
+
+// Aqui vamos adicionar um retorno 404 seguindo o mesmo padrão de arquivos
+// que temos feito. Porém, nesse momento só será modificado a pasta de views.
+
+// Para chamar um arquivo diretamente sem chamar uma rota, podemos utilizar
+// o mesmo padrão de res.status(), porém, chamaremos agora o sendFile em
+// seguida, que é a mesma função que está sendo utilizada nos arquivos de rota.
+// Dentro do sendFile, chame path.join e indique o caminho do arquivo que
+// deseja utilizar.
