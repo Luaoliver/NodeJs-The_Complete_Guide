@@ -295,6 +295,8 @@
 // Dentro do sendFile, chame path.join e indique o caminho do arquivo que
 // deseja utilizar.
 
+// --------------------
+
 // 72. A Hint!
 
 // Na próxima aula, escreveremos este código:
@@ -308,6 +310,8 @@
 
 // module.exports = path.dirname(require.main.filename);
 // Bem direto :)
+
+// --------------------
 
 // 73. Using a Helper Function For Navigation
 
@@ -336,3 +340,17 @@
 // Após criado o arquivo, vamos importá-lo em todas as rotas. Você ainda pode
 // utilizar a abordagem antiga, mas essa também é uma maneira que funciona,
 // além de ser mais limpa e que deve funcionar em todos os sistemas operacionais.
+
+// --------------------
+
+// 74. Styling our Pages
+
+// Apesar de este não ser um curso sobre css, é muito importante saber como
+// servir o css em um aplicativo node, porque normalmente você terá que lidar
+// com isso.
+
+// Começamos criando uma tag <style> no <head> e dentro dela. Todas as tags
+// presentes no <body> devem receber uma classe para que possam ser estilizadas.
+
+
+// As classe são referenciadas por um '.'.
