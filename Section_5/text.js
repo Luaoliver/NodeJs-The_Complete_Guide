@@ -354,3 +354,38 @@
 
 
 // As classe são referenciadas por um '.'.
+
+// --------------------
+
+// 75. Serving Files Statically
+
+// após definir os estilos, um problema que encontramos é que todos estão
+// presentes nos arquivos html e gostariamos de deixá-los mais limpo.
+// Nesta aula vamos ver teoricamente como podemos mudar o nosso css para
+// arquivos dinâmicos.
+
+// Normalmente, você teria os arquivos css em algum lugar e apontaria para
+// eles quando o aplicativo for veiculado.
+// Sendo assim, você pode criar uma nova subpasta e nomeá-la como quiser, mas
+// a convenção é chamá-la de public, pois a intenção é demonstrar que ali
+// dentro possui um conteúdo que estará sempre exposto de maneira pública e
+// não necessita de permissão para acessá-lo.
+
+// em geral, não há a possibilidade de alguém de fora acessar os arquivos do
+// seu aplicativo, mas nesse caso gostariamos de abrir uma exceção porque
+// no fim das contas, queremos ter um link que é apontado para nosso css.
+
+// Para utilizar o arquivo css na nossa aplicação, precisamos de um recurso
+// que o expressjs nos oferece, precisamos ser capazes de fornecer arquivos
+// estaticamente que sejam enviados diretamente ao sistema de arquivos.
+// Para isso, registramos um novo middleware utilizando express.static
+// que é um método interno utilizado para servir arquivos estáticos.
+// Niddo devemos passar pela pasta que queremos conceder o acesso a leitura.
+// Com isso, o usuário poderá acessar a pasta public e no html deve-se omitir
+// a exitência da pasta public e indicar apenas o restante do caminho.
+
+// Desta maneira, toda solicitação será enviada para a pasta pública e todo
+// caminho será buscado lá.
+
+// A propósito, você pode registrar várias pastas estáticas e elas irão
+// canalizar a solicitação por todas elas até que encontre o arquivo.
