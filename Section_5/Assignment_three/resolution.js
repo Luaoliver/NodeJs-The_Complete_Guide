@@ -22,3 +22,11 @@
 
 // Por fim, criei um app.js que sobre nosso servidor e consome as rotas
 // declaradas anteriormente.
+
+// 3. Primeiramente, adicionei o seguinte trecho no app.js:
+//      app.use(express.static(path.join(__dirname, 'public')))
+// esse trecho vai nos ajudar a acessar os caminhos css.
+
+// Depois, criei uma pasta public/css e adicionei um arquivo de
+// estilização. Esse arquivo foi referenciado nos dois views para que
+// pudessem utilizar o que foi definido nele.
