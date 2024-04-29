@@ -414,3 +414,11 @@
 // para os usuários. Caso uma solicitação seja feita diretamente a um arquivo,
 // você poderá ativar a veiculação estática para esses aerquivos via 
 // express.static()
+
+// --------------------
+
+// 77. Useful Resources & Links
+
+// Useful resources:
+// Express.js Official Docs:
+// https://expressjs.com/en/starter/installing.html
