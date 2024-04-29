@@ -389,3 +389,28 @@
 
 // A propósito, você pode registrar várias pastas estáticas e elas irão
 // canalizar a solicitação por todas elas até que encontre o arquivo.
+
+// --------------------
+
+// 76. Wrap Up
+
+// What is Express.js?
+// O Express é um framework do NodeJs, um pacote com utilidades que podem
+// facilitar a construção da sua aplicação. Além disso, fornece um conjunto
+// de regras que ditam como o app pode ser organizado. Também é altamente
+// extensível, permitindo que outros pacotes se conecte a ele.
+
+// Middleware, next() and res()
+// O Express depende muito das funções chamadas middleware, que podem ser
+// chamadas facilmente utilizando um use(). Essas funções são capazes de lidar
+// com uma solicitação e devem chamar next() para que a solicitação seja
+// encaminhada para a próxima função ou para que envie uma resposta.
+
+// Routing
+// É possível filtrar solicitações e métodos.
+
+// Serve Files
+// Não te limita a servir dummy text como resposta, é possível enviar files()
+// para os usuários. Caso uma solicitação seja feita diretamente a um arquivo,
+// você poderá ativar a veiculação estática para esses aerquivos via 
+// express.static()
