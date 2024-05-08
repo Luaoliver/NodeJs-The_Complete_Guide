@@ -12,3 +12,22 @@
 // mecanismos de modelagem
 
 // --------------------
+
+// 79. Sharing Data Across Rquests & Users
+
+// Começamos modificando um pouco do estilo e adicionando marcação adicional
+// ao projeto.
+
+// Hoje nosso projeto trabalha com armazenamento de dados no console, nesse
+// módulo vamos ver como salvar esses dados em constantes antes de entender
+// como podemos utilizar um banco de dados em nosso projeto.
+// Dessa maneira, nós iniciamos uma constante que possa receber os produtos
+// dos quais queremos salvar e em seguida fazemos um push nela do que está
+// sendo salvo. Como no exemplo:
+//      products.push({ title: req.body.title });
+
+// Mesmo que isso te dê a impressão de mudança, uma constante irá funcionar
+// pois o que fazemos é apenas adicionar ou remover elementos dela, o que não
+// afeta o objetto no geral.
+// Também é necessário modificar a maneira como está sendo exportado e 
+// importado. Pois agora nossa constante também deve ser exportada.
