@@ -65,3 +65,40 @@
 
 // Handlebars <p>{{ name }}</p>
 // Utiliza o HTML normal e uma linguagem de modelo personalizada.
+
+// --------------------
+
+// 81. Installing & Implementing Pug
+
+// Para instalar todos os mecanismos você pode utilizar o seguinte comando:
+//      npm install --save ejs pug express-handlebars
+// Isso te permite instalar diversos pacotes de uma só vez.
+
+// Esses pacotes não serão utilizados ao mesmo tempo, veremos um de cada vez,
+// começando pelo mais exótico, o pug.
+
+// app.set() nos permite definir valores globamelte em nosso aplicativo
+// express que podem ser chaves ou itens de configuração que o express não
+// entende. Eles são ignorados, mas podemos lê-los através de app.get().
+
+// Para utilizar o pug, podemos apenas declarar:
+//      app.set('view engine', 'pug');
+// Vale lembrar que nem todos os mecanismos possuem esse suporte, mas no
+// nosso caso é possível utilizá-lo assim.
+
+// Agora, observe esse trecho:
+//      app.set('view engine', 'pug');
+//      app.set('views', 'views');
+// O que ele faz é basicamente dizer que queremos compilar modelos dinâmicos
+// com o mecanismo Pug e o caminho para onde encontrá-los.
+
+// Também devemos adicionar um arquivo modelos para o pug, tendo sua extensão
+// .pug para que funcione de maneira diferente do .html.
+
+// Para que a nossa página seja capaz de ler o que foi adicionado no nosso
+// arquivo .pug, devemos modificá-lo, removendo:
+//      res.sendFile(path.join(rootDir, 'views', 'shop.html'))
+// e adicionando:
+//      res.render('shop')
+// Não precisamos definir que shop é o arquivo .pug, pois no app.js já
+// definimos o .pug como default.
