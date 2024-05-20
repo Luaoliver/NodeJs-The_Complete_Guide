@@ -102,3 +102,17 @@
 //      res.render('shop')
 // Não precisamos definir que shop é o arquivo .pug, pois no app.js já
 // definimos o .pug como default.
+
+// --------------------
+
+// 82. Outputting Dynamic Content
+
+// Até o momento, estamos processando o conteúdo de Shop, mas nenhum conteúdo
+// dinâmico, que é exatamente o intuito desse módulo.
+// Para fazer isso, devemos buscar os dados que estão sendo recebidos de
+// de alguma maneira, podendo ser com:
+//      const products = adminData.products
+// E passá-lo para nosso render como um objeto.
+
+// O pug nos permite iterar sobre um array utilizando a seguinte sintaxe:
+//      each ProdutoArmazenado in Matriz
