@@ -122,3 +122,13 @@
 // 83. Oficial Pug Docs
 
 // https://pugjs.org/api/getting-started.html
+
+// --------------------
+
+// 84. Converting HTML Files to Pug
+
+// Nesta ual, iremos converter todos os arquivos html para arquivos no modelo
+// pug.
+// Para indicar uma classe no Pug, utilizamos o .classe, mas para utilizar um
+// id, utilizamos #id ao final da construção. Exemplo:
+//      input(type="text", name="title")#title
