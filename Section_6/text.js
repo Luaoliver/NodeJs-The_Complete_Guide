@@ -132,3 +132,12 @@
 // Para indicar uma classe no Pug, utilizamos o .classe, mas para utilizar um
 // id, utilizamos #id ao final da construção. Exemplo:
 //      input(type="text", name="title")#title
+
+// --------------------
+
+// 85. Adding a Layout
+
+// O 'block' em um arquivo .pug, é utilizado para reservar um bloco onde você
+// pode adicionar conteúdo dinâmico utilizando as palavras definidas após ele.
+//
+
