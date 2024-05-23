@@ -149,3 +149,15 @@
 // Funciona como uma validação, entede-se que se o caminho for igual ao
 // referido, deve-se utilizar a classe active. O path se refere ao caminho
 // da página.
+
+// --------------------
+
+// 87. Avoiding an Error
+
+// Na próxima palestra daremos uma olhada em um mecanismo de visualização
+// diferente: Handlebars.
+
+// Devido a uma lateração temporária introduzida pelos autores da biblioteca
+// certifique-se de executar:
+//      npm install --save express-handlebars@3.0
+// antes de começar a usar esse pacote.
