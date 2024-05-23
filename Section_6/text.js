@@ -141,3 +141,11 @@
 // pode adicionar conteúdo dinâmico utilizando as palavras definidas após ele.
 //
 
+// --------------------
+
+// 86. Finishing the Pug Template
+
+//      class=(path === '/admin/add-product' ? 'active' : '')
+// Funciona como uma validação, entede-se que se o caminho for igual ao
+// referido, deve-se utilizar a classe active. O path se refere ao caminho
+// da página.
