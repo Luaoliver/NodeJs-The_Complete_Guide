@@ -157,7 +157,21 @@
 // Na próxima palestra daremos uma olhada em um mecanismo de visualização
 // diferente: Handlebars.
 
-// Devido a uma lateração temporária introduzida pelos autores da biblioteca
+// Devido a uma alteração temporária introduzida pelos autores da biblioteca
 // certifique-se de executar:
 //      npm install --save express-handlebars@3.0
 // antes de começar a usar esse pacote.
+
+// --------------------
+
+// 88. Working with Handlebars
+
+// Para usar o Handlebars, devemos começar modificando o sistema de exibição
+// no app.js.
+// Para isso, você precisa importar o Handlebars, pois isso não é feito
+// automaticamente pelo express como em outros caso. Depois deve declará-lo
+// e chamá-lo.
+
+// A maneira como os dados são passados não muda de mecanismo para mecanismo.
+// Sempre será feito da mesma maneira, ou seja, não há necessidade de modificar
+// os arquivos .js
