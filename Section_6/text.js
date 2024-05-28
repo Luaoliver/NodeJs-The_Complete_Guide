@@ -175,3 +175,13 @@
 // A maneira como os dados são passados não muda de mecanismo para mecanismo.
 // Sempre será feito da mesma maneira, ou seja, não há necessidade de modificar
 // os arquivos .js
+
+// --------------------
+
+// 89. Converting our Project to Handlebars
+
+// Nesta aula aprendemos como utilizar o Handlebars.
+
+// Handlebars não aceita lógicas diretas dentro de seus arquivos, para isso,
+// você deve adicioná-las em um arquivo .js e depois passá-las para o
+// arquivo hbs.
