@@ -185,3 +185,20 @@
 // Handlebars não aceita lógicas diretas dentro de seus arquivos, para isso,
 // você deve adicioná-las em um arquivo .js e depois passá-las para o
 // arquivo hbs.
+
+// --------------------
+
+// 90. Adding the Layout to Handlebars
+
+// O Handlebars é compatível com layouts, mas funciona de uma maneira um pouco
+// diferente do pug.
+// No nosso app.js, você deve declarar a pasta principal onde seus layouts se
+// encontrarão. Você também deve definir o layout default, que será nosso
+// arquivo main-layout.hbs.
+
+// O hbs não nos permite criar um bloco reservado, como fizemos no pug. Mas
+// ele nos permite declarar {{{ }}} onde, dentro dela, será um espaço
+// reservado.
+
+// A maneira mais fácil de deixar os estilos dinâmicos, é adicionando um if
+// para identificar a página e aplicar o estilo correto.
