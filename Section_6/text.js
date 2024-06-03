@@ -202,3 +202,14 @@
 
 // A maneira mais fácil de deixar os estilos dinâmicos, é adicionando um if
 // para identificar a página e aplicar o estilo correto.
+
+// --------------------
+
+// 91. Working with EJS
+
+// O EJS é o mecanismo que será utilizado no restante deste curso.
+// Ele é um mecanismo como o pug, suportado imediatamente, sem a necessidade
+// de instalar novos pacotes. Basta defini-lo como mecanismo de exibição.
+
+// O ejs não suporta layouts, mas encontraremos uma solução para ter algum
+// tipo de reutilização de blocos.
