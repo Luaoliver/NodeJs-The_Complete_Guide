@@ -213,3 +213,10 @@
 
 // O ejs não suporta layouts, mas encontraremos uma solução para ter algum
 // tipo de reutilização de blocos.
+
+// --------------------
+
+// 92. ?
+
+// Uma nova aula foi adicionada ao curso na primeira seção. Sendo assim, o
+// número de aulas foi alterado e noss próxima aula terá número 93.
