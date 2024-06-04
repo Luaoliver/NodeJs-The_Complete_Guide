@@ -220,3 +220,15 @@
 
 // Uma nova aula foi adicionada ao curso na primeira seção. Sendo assim, o
 // número de aulas foi alterado e noss próxima aula terá número 93.
+
+// --------------------
+
+// 93. Working on the Layout with Partials
+
+// O ejs não possui  a opção de utilizar layouts, porém podemos fazer algo
+// parecido utilizando partials ou includes, que é um recurso que o pug
+// e handlebars também conhecem.
+
+// Dessa maneira, ao invés de fazer um layout principal com algumas partes
+// individuais, você consegue criar um layout compartilhado que podem ser
+// mesclados nas visualizações que você está criando.
