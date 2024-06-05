@@ -232,3 +232,43 @@
 // Dessa maneira, ao invés de fazer um layout principal com algumas partes
 // individuais, você consegue criar um layout compartilhado que podem ser
 // mesclados nas visualizações que você está criando.
+
+// --------------------
+
+// 94. Wrap Up
+
+// Aqui vamos limpar o nosso projeto e fazer um resumo rápido de tudo aquilo
+// que foi aprendido.
+
+// Começaremos removendo todos os arquivos .pug, .html .hbs para manter um
+// projeto limpo, pois não precisaremos mais deles. Nos próximos módulos,
+// utilizaremos o .ejs.
+
+// Após tudo limpo, vamos revisar o fluxo de dados. Como esses mecanismos de
+// modelagem utilizam esses dados.
+
+// Primeiro, renderizamos um modelo com o método de renderização especial
+// fornecido pelo expressjs que sempre irá procurar pelo mecanismo de exibição
+// registrado.
+//      Método de renderização = res.render()
+// O mecanismo de exibição é registrado no início do nosso aplicativo, no app.js.
+//      Registro = app.set('view engine', 'ejs') 
+// View engine é uma chave de configuração geral entendida pelo expressjs.
+// Também dizemos a ele onde nossas visualizações podem ser encontradas, mesmo
+// que essa seja a configuração padrão, nós adicionamos para se ter conhecimento
+// deste recurso, mas se você utilizar a pasta views, por padrão, você não
+// precisa declarar isso, pois o expressjs já entende que ela seja o padrão.
+//                 app.set('views', 'views')
+
+// Com isso, o express é capaz de renderizar suas páginas.
+// Com o res.render, você sempre deve se referir a sua página de visualização,
+// como por exemplo o 'add-product', você também pode definir um objeto que
+// reterá os dados que são passados como variáveis para esse modelo.
+
+// Os mecanismos também nos permitem utilizar recursos, como lops, condicionais,
+// entre outros.
+
+// É importante ter em mente que no fim das contas, tudo é traduzido em html.
+// Se você inspecionar a sua página, verá um html. O código fonte sempre
+// recupera um html normal, você não encontrará nenhum código javascript ou
+// ejs.
