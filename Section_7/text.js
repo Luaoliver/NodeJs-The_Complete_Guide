@@ -33,3 +33,17 @@
 // http o código deve ser executado.
 
 // A controller também pode ser dividida em lógica e funções middleware.
+
+// --------------------
+
+// 99. Adding controllers
+
+// Para que nosso projeto de assemelhe ao padrão mvc, precisamos adicionar
+// controllers a ele, atualmente tudo está misturado em nossos arquivos de
+// rota.
+
+// A maneira como roteamos não muda, ela deve permanecer a mesma.
+// A lógica intermediária é exatamente o que contitnui a controller.
+// A medida que o seu projeto vai crescendo, deixa de ser viável manter toda
+// a lógica de resposta dentro do arquivo de rotas, pois isso tende a criar
+// arquivos gigantes e difíceis de manter.
