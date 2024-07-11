@@ -47,3 +47,11 @@
 // A medida que o seu projeto vai crescendo, deixa de ser viável manter toda
 // a lógica de resposta dentro do arquivo de rotas, pois isso tende a criar
 // arquivos gigantes e difíceis de manter.
+
+// --------------------
+
+// 100. Finishing the Controllers
+
+// Na ultima aula modificamos todas as rotas para que possuam um controlador.
+// Nessa vamos garantir que a rota 404 também seja acessada através de um
+// controlador. Isso não é algo obrigatório, mas é uma boa prática.
