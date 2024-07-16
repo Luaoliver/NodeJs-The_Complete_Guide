@@ -55,3 +55,24 @@
 // Na ultima aula modificamos todas as rotas para que possuam um controlador.
 // Nessa vamos garantir que a rota 404 também seja acessada através de um
 // controlador. Isso não é algo obrigatório, mas é uma boa prática.
+
+// --------------------
+
+// 101. Adding a Product Model
+
+// Com os controllers atualizados é o momento de adocionar as models.
+// O problema com o model que já temos é que le eé extremamente simples, nós
+// gerenciamos nossa matriz de produtos e logo em seguida o produto é criado
+// instantaneamente como um objeto.
+
+// Para melhorar isso, criaremos uma nova pasta Models na raiz do projeto.
+// Dessa maneira teremos uma separação muito clara.
+
+// Em models/products, o this dentro do save se refere ao objeto criado na
+// classe.
+
+// Adicionar a palavra chave static que o js oferece, garante que possamos
+// chamar o método diretamente na prórpia classe e não em um objeto instanciado.
+
+// Quando importamos uma classe, a convenção é que seu primeiro caractere seja
+// em maiúsculo.
