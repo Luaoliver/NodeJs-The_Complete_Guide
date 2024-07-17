@@ -76,3 +76,11 @@
 
 // Quando importamos uma classe, a convenção é que seu primeiro caractere seja
 // em maiúsculo.
+
+// --------------------
+
+// 102. Storing Data in Files Via the Model.
+
+// Vamos garantir que salvaremos os produtos que forem adicionados em outro
+// lugar e não mais na matriz criada anteriormente.
+// Devemos receber todos os produtos ja existentes e os novos também.
