@@ -19,14 +19,14 @@ module.exports = class Product {
                 products = JSON.parse(fileContent)
             }
             products.push(this)
-            fs.writeFile(p, JSON.stringify(products), (err) => {
+            fs.writeFile(p, JSON.stringify(products), err => {
                 console.log(err)
             })
         })
 
     }
 
-    static fetchAll() {
+    static fetchAll(cb) {
         const p = path.join(
             path.dirname(process.mainModule.filename), 
             'data',
@@ -34,10 +34,10 @@ module.exports = class Product {
         )
         fs.readFile(p, (err, fileContent) => {
             if (err) {
-                return []
+                cb([])
             }
 
-            return JSON.parse(fileContent)
+            cb(JSON.parse(fileContent))
         })
     }
 }
