@@ -113,3 +113,13 @@
 // Faz a comunicação através das duas dimensões.
 
 // Este padrão será utilizado até o final do projeto.
+
+// --------------------
+
+// 106. Useful Resources & Links
+
+// Attached, you find the source code for this section.
+// When using my source code, make sure to run npm install in the extracted folder!
+
+// Useful resources:
+// More on MVC: https://developer.mozilla.org/en-US/docs/Glossary/MVC
