@@ -98,3 +98,18 @@
 // --------------------
 
 // 105. Wrap up
+
+// Neste módulo aprendemos sobre o padrão MVC.
+
+// Model é utilizado para representar e gerenciar nossos dados, salvando-os, buscando-os
+// e porteriormente atualizando-os. Independente de onde os seus dados é gerenciado,
+// o model sempre será responsável por eles.
+
+// View é responsável por apresentar esses dados ao usuário. É responsável por tudo
+// aquilo que o usuário visualiza e não deve conter muita lógica. De acordo com o 
+// mecanismo de modelagem isso pode ser mais fácil ou mais complexo.
+
+// O Controller deve fazer tudo o que for necessário para conectar seu Model e a View.
+// Faz a comunicação através das duas dimensões.
+
+// Este padrão será utilizado até o final do projeto.
