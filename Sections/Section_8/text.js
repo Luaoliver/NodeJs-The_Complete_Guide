@@ -20,3 +20,9 @@
 // --------------------
 
 // 109. Working on the Navigation
+
+// --------------------
+
+// 110. Registering the Routes
+
+// Nesta aula vamos adicionar as novas rotas do nosso app.
