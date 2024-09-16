@@ -26,3 +26,7 @@
 // 110. Registering the Routes
 
 // Nesta aula vamos adicionar as novas rotas do nosso app.
+
+// --------------------
+
+// 111. Storing Product Data
