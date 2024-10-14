@@ -7,4 +7,15 @@
 // Using Query Params.
 // Enhance our Models.
 
+// --------------------
+
 // 117. Preparations
+
+// --------------------
+
+// 118. Applied Changes
+
+//What changed in the attached files?
+
+// Basically, a mobile navigation (for smaller/ mobile screens) was added.
+//Besides that, only minor things were fixed.
