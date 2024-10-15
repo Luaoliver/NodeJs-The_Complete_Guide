@@ -15,7 +15,11 @@
 
 // 118. Applied Changes
 
-//What changed in the attached files?
+// What changed in the attached files?
 
 // Basically, a mobile navigation (for smaller/ mobile screens) was added.
-//Besides that, only minor things were fixed.
+// Besides that, only minor things were fixed.
+
+// --------------------
+
+// 119. Adding the Product ID to the Path
