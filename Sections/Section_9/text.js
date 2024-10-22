@@ -23,3 +23,13 @@
 // --------------------
 
 // 119. Adding the Product ID to the Path
+
+// --------------------
+
+// 120. Extracting Dynamic Params
+
+// Quando você passa os ':' o node vai entender que aquilo se trata de um dado que
+// será passado e não uma rota absoluta.
+
+// O nome que você utiliza na rota deve ser o mesmo nome que você utiliza para
+// extrair o dado.
