@@ -12,11 +12,10 @@ exports.getAddProduct = (req, res, next) => {
 
 exports.postAddProduct = (req, res, next) => {
   const title = req.body.title
-  const image = req.body.imageUrl
+  const imageUrl = req.body.imageUrl
   const price = req.body.price
   const description = req.body.description
-
-  const product = new Product(title, image, price, description)
+  const product = new Product(title, imageUrl, description, price)
   product.save()
   res.redirect('/')
 }
@@ -26,7 +25,7 @@ exports.getProducts = (req, res, next) => {
     res.render('admin/products', {
       prods: products,
       pageTitle: 'Admin Products',
-      path: '/admin/products',
+      path: '/admin/products'
     })
   })
 }
