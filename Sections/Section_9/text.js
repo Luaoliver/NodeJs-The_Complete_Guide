@@ -37,3 +37,7 @@
 // --------------------
 
 // 121. Loading Product Detail Data
+
+// --------------------
+
+// 122. Rendering the Product Detail View
