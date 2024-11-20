@@ -41,3 +41,10 @@
 // --------------------
 
 // 122. Rendering the Product Detail View
+
+// --------------------
+
+// 123. Passing Data with POST Requests
+
+// Na aula anterior aprendemos a como buscar informações de um produto através da url.
+// Aqui, temos um problema semelhante ao adicionar um produto no carrinho.
