@@ -48,3 +48,10 @@
 
 // Na aula anterior aprendemos a como buscar informações de um produto através da url.
 // Aqui, temos um problema semelhante ao adicionar um produto no carrinho.
+
+// --------------------
+
+// 124. Adding a Cart Model
+
+// Nesta, aula, para criar o carrinho utilizaremos uma abordagem diferente, sem a
+// utilização do constructor, mas sim com a criação de um método estático.
