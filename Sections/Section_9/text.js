@@ -55,3 +55,28 @@
 
 // Nesta, aula, para criar o carrinho utilizaremos uma abordagem diferente, sem a
 // utilização do constructor, mas sim com a criação de um método estático.
+
+// --------------------
+
+// 125. Using Query Params
+
+// Nesse momento vamos nos concentrar na edição de um produto.
+
+// Caso tenha que passar algum parâmetro adicional (ou parâmetro de consulta) na url,
+// esse parâmetro de consulta pode ser adicionado a qualquer URL adicionando um '?'
+// e em seguida um par de valores-chave, separados por um sinal de igual. Como:
+//      '?edit=true'
+
+// Você também pode ter vários parâmetro de consulta separando-os por um '&'. Como:
+//      '?edit=true&title=newTitle'
+
+// Esses parâmetro são chamados de dados opcionais. O caminho é determinado pela
+// parte anterior ao ponto de interrogação.
+
+// Ou seja, adicionar parâmetros a uma rota, não vai afetar a rota original, as
+// duas podem existir simultaneamente. Mas você sempre pode adicionar parâmetros de
+// consulta em seus controladores.
+
+// IMPORTANT: The extracted value always is a String! So "true" intead of true.
+
+
