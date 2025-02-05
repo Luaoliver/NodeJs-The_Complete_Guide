@@ -79,4 +79,12 @@
 
 // IMPORTANT: The extracted value always is a String! So "true" intead of true.
 
+// --------------------
 
+// 126. Pre-Populating the Edit Product Page with Data.
+
+// Para preencher previamente o formulário de edição com as informações do produto,
+// precisamos buscar o produto primeiro. Para isso, precisamos utilizar o model do
+// nosso objeto, buscando através do id.
+
+// Rota de acesso: http://localhost:3000/admin/edit-product/123245?edit=true
