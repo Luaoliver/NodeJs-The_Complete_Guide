@@ -88,3 +88,10 @@
 // nosso objeto, buscando através do id.
 
 // Rota de acesso: http://localhost:3000/admin/edit-product/123245?edit=true
+
+// --------------------
+
+// 127. Linking to the Edit Page
+
+// Aqui vamos garantir que podemos acessar a página de edição de produto através de
+// uma rota.
