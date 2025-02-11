@@ -95,3 +95,10 @@
 
 // Aqui vamos garantir que podemos acessar a página de edição de produto através de
 // uma rota.
+
+// --------------------
+
+// 128. Editing the Product Data
+
+// Nesta aula vimos como modificar corretamente um produto já exixtente.
+
