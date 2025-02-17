@@ -106,3 +106,6 @@
 
 // 129. Adding the Produc-Delete Functionality
 
+// --------------------
+
+// 130. Deleting Cart Items
