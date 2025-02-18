@@ -109,3 +109,7 @@
 // --------------------
 
 // 130. Deleting Cart Items
+
+// --------------------
+
+// 131. Displaying Cart Items on the Cart Page
