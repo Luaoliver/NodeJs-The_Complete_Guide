@@ -113,3 +113,11 @@
 // --------------------
 
 // 131. Displaying Cart Items on the Cart Page
+
+// --------------------
+
+// 132. Deleting Cart Items
+
+// --------------------
+
+// 133. Fixing a Delete Product Bug
