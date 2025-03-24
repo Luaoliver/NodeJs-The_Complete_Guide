@@ -121,3 +121,18 @@
 // --------------------
 
 // 133. Fixing a Delete Product Bug
+
+// --------------------
+
+// 134. Wrap Up
+
+// Neste módulo aprendemos sobre roteamenento dinâmico.
+// Você pode passar segmentos de caminho dinâmico adicionando ':' ao caminho do
+// router.
+// O nome adicionado após os dois pontos é o nome pelo qual você pode extrair os
+// dados nos parâmetros de solicitação. Você pode ter mais de um segmento dinâmico
+// por rota.
+// Query params são passados com ?myParam=value e extraido com req.query.myParam
+
+// Também continuamos trabalhando nos Models e adicionamos um model de carrinho que
+// só contém métodos estáticos pois apenas queremos interagir através dele.
