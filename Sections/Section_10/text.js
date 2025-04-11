@@ -53,3 +53,25 @@
 //      SELECT * FROM users WHERE age > 28
 // Sendo SELECT;FROM;WHERE as nossas SQL Keywords/Syntax.
 // E o restante sendo os atributos e condições.
+
+// --------------------
+
+// 138. NoSQL Introduction
+
+// O nome NoSQL simplesmente sugere que ele nao segue a abordagem que o SQL segue e 
+// também utiliza uma linguagem de consulta diferente.
+
+// No NoSQL também temos "tabelas", mas estas são chamadas de collections. Em cada
+// collection, os dados são chamados de documents. Esses documents podem possuir
+// valores diferentes entre si, isso é permitido no NoSQL.
+
+// Nesse modelo nao temos relacionamento entre as tabelas, isso significa que em cada
+// collection teremos dados duplicados, como um email. A vantagem disso é que ao
+// recuperarmos dados, nós não precisaremos juntar várias tabelas, mas apenas buscar
+// aquela que possui os dado que estamos interessados, o que pode ser muito mais
+// rápido e eficiente.
+
+// Em resumo, suas principais características são:
+//    Não possuir um schema definido, ou seja, não necessita de uma estrutura definida
+//    permitindo que vários objetos diferentes ocupem a mesma collection
+//    Não há relação entre os dados. Você pode os relacionar duplicando informações.
