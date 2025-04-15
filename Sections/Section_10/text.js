@@ -75,3 +75,32 @@
 //    Não possuir um schema definido, ou seja, não necessita de uma estrutura definida
 //    permitindo que vários objetos diferentes ocupem a mesma collection
 //    Não há relação entre os dados. Você pode os relacionar duplicando informações.
+
+// --------------------
+
+// 139. Comapring SQL and NoSQL
+
+// Temos basicamente dois tipos de escalabilidade, a horizontal e a vertical.
+// Na escalabilidade horizontal, são adicionados novos servidores, enquanto na
+// escalabilidade vertical, é adicionado mais capacidade de processamento.
+
+// SQL
+//    Data uses schemas
+//    Relations!
+//    Data is distributed across multiple tables
+//    Horizontal scaling is difficult / impossivle
+//    Vertical scaling is possible
+//    Limitations for lots of (thousands) read & write queries per second
+// Aqui você pode apenas tornar o seu servidor mais forte, mas isso pode ser muito
+// difícil ou impossível e isso pode vir a ser um problema, considerando um caso em
+// o sistema possua milhares de consultas sendo feitas por segundo, é possível que o
+// SQL atinja seus limites e utilizar esse meio pode nao ser a melhor opção.
+
+// NoSQL
+//    Schema-less
+//    No (or very few) relations
+//    Data is typically merged / nested in a few collections
+//    Both horizontal and vertical scaling is possible
+// Este seria uma otima escolha considerando uma aplicação de alto rendimento,
+// principalmente pensando em escalabilidade. Mas também considerando que nem todas
+// as partes dos seus dados serão acessadas ao mesmo tempo.
